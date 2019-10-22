@@ -26,10 +26,7 @@ The deployment process will start. It takes approximatly 10 minutes. There may b
 
 ## Using SSH in a terminal
 
-### Linux and Mac
-
-
-Open a terminal, and type:
+Open a terminal (In windows, press the windows key and type `powershell` and the press `enter`) and type:
 
 ```bash
 ssh ubuntu@<my_vms_ip>
@@ -67,11 +64,6 @@ You will probably want access to the **terminal** for the tutorial.  To do this,
 # Generating SSH Keys
 
 Using SSH Keys is a more secure and more convienient authentication method than passwords.  This uses a pair of keys; a public key that you can give to someone, or put on a machine you want to access, and a private key that you keep to yourself and never give to anyone.
-
-This is the 
-## Windows
-
-## Linux and MAC
 
 To create an SSH Key pair, open up a terminal and type the keygen command:
 
@@ -131,3 +123,6 @@ type C:\Users\<Name>\.ssh\id_rsa.pub
 Open **Visual Studio Code**, and press `Ctrl` + `Shift` + `X` to open the extensions panel.  In the search box on the left hand side, type `Remote SSH`.  This should find lots of extensions, the top one should be **Remote - SSH** and under this it should say **Microsoft**.  Click on it and then click install. It may ask you to restart **Visual Studio Code**
 
 
+# Installing an SSH client on Windows 10.
+
+https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/
