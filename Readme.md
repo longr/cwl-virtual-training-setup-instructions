@@ -39,6 +39,7 @@ replacing `<my_vms_ip>` with the IP address of your VM.  If you setup the public
 
 ## Using Visual Studio Code.
 
+### Setting up an SSH Connection.
 Open visual studio code, and press the **`F1`** key to access the command palette.  Then click on **Remote-SSH: Connect to Host...**.  If you begin typing this, it should appear in the list.
 
 Once you have clicked on this, click on `**Add New SSH Host...*`, and then type
@@ -47,14 +48,27 @@ Once you have clicked on this, click on `**Add New SSH Host...*`, and then type
 ssh ubuntu@<my_vms_ip>
 ```
 
+You may be prompted to **Select SSH configuration file to update**.  If you are select ``C:Users\<Name>\.ssh\config``
+
+A pop up box should then appear in the bottom right with an option to **Connect**.  Click on **Connect**.  If the box does not appear follow the instructions for connecting to an existing SSH connection below.
+
+### Connecting to an existing SSH connection
+
 To connect to this, press the **`F1`** key to access the command palette.  Then click on **Remo\
 te-SSH: Connect to Host...**.  You should then see the IP address of the machine you want to connect to in the list, click on it.
+
+This should open up a new window.  On **Windows** this should have a prompt at the top for you to enter your SSH passphrase. On Linux, your system should prompt for the passphrase.
+
+Once it has connected, this window of Visual Studio Code will have access to all the files on the remote machine.
+
+You will probably want access to the **terminal** for the tutorial.  To do this, click on **Terminal** at the top, and then click on **New Terminal**.
 
 
 # Generating SSH Keys
 
 Using SSH Keys is a more secure and more convienient authentication method than passwords.  This uses a pair of keys; a public key that you can give to someone, or put on a machine you want to access, and a private key that you keep to yourself and never give to anyone.
 
+This is the 
 ## Windows
 
 ## Linux and MAC
@@ -71,6 +85,7 @@ This will bring up a prompt asking you where to save the public-private key pair
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/<user_name>/.ssh/id_rsa): 
 ```
+Note, the file will have a different path in Windows and MacOS
 
 You can just press _Enter_ here to save them in the default file.  You will then be prompted for a passphrase (a password) for this file.  It is highly encouraged to use a passphrase, not doing so is insecure.
 
@@ -105,6 +120,11 @@ The part of this pair that you will need for creating the virtual machine is the
 cat /home/<username>/.ssh/id_rsa.pub
 ```
 
+and in windows
+
+```bash
+type C:\Users\<Name>\.ssh\id_rsa.pub
+```
 
 # Setting up SSH on Visual Studio Code
 
