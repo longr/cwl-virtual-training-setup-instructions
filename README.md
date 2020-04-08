@@ -1,5 +1,6 @@
-Introduction
-############
+# CWL Virtual Training Setup
+
+## Introduction
 
 - aims
 - what we won't do
@@ -7,16 +8,16 @@ Introduction
 - tools required
 - structure and format of course
 
-[[ Will ]]
+### [[ Will ]]
 This course will provide a brief introduction to the Common Workflow Language (CWL).  You will be shown how to write workflows in CWL and how to execute them. You will be shown the basic and more advanced features of the language such as executing workflows in docker containers.
 
-[[ Won't ]]
+### [[ Won't ]]
 This tutorial will not explain why you should use workflows, or how to use a specific implementation such as Toil or Galaxy. Its focus is on how to use CWL to describe your workflows, and how to use the Common Workflow Language.
 
-[[ Prior knowledge ]]
+### [[ Prior knowledge ]]
 No prior knowledge of workflows or CWL is required.  A basic understanding of the linux command line advised.  [[ Are we supporting windows and OSX ]]
 
-[[ Tools ]]
+### [[ Tools ]]
  - CWL installation (see: ...)
  - Docker installation (see: ...)
 
@@ -26,12 +27,12 @@ No prior knowledge of workflows or CWL is required.  A basic understanding of th
  - Text editor? [[ Are we recommending one? VSCode? ]]
 
 
-[[ Structure ]]
+### [[ Structure ]]
 
 This course will be conducted remotely using [[ INSERT DETAILS ]].
 
-Pre-course setup
-################
+## Pre-course setup
+
 
 Install CWL, the instructions can be found here:
 
