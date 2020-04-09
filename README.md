@@ -1,5 +1,10 @@
 # CWL Virtual Training Setup
 
+Replicability and reproducability are key to scientific analysis. To help achieve these aims, workflows provide a way to describe an analysis or tool in a software and operating system agnostic manner.
+
+The common workflow language was created as standard way to describe these workflows, with a particular emphasis to describe workflows suited to data intensive sciences such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.  CWL allows workflows to be created that can run on different computational systems.
+
+
 ## Introduction
 
 - aims
